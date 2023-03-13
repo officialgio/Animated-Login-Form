@@ -15,7 +15,7 @@ const tickMarkPath = document.querySelector('.tick-mark path');
 const pathLength = tickMarkPath.getTotalLength();
 
 // Must have this to work with the strokeDashoffset property
-gsap.set(tickMarkPath, {strokeDashoffset: pathLength, strokeDasharray: pathLength});
+gsap.set(tickMarkPath, { strokeDashoffset: pathLength, strokeDasharray: pathLength });
 
 /**
  * Check that the checkbox is checked. If so, reveal the blue div and draw the tick 
