@@ -4,7 +4,7 @@ A responsive animated login form in JS.
 
 #### NOTE: SVGs came from Figma
 
-# Common confussion on checbox stroke animation
+# Common confusion on checbox stroke animation
 
 * Check this form for the stroke animation: [Link](https://css-tricks.com/svg-line-animation-works/)
 ```javascript
@@ -24,7 +24,7 @@ gsap.set(tickMarkPath, {strokeDashoffset: pathLength, strokeDasharray: pathLengt
 checkbox.addEventListener('click', () => {
     if (checkbox.checked) {
         tl2.to('.checkbox--fill', { top: '0%' });
-        tl2.fromTo(tickMarkPath, {strokeDashoffset: pathLength}, {strokeDashoffset: 0}, "<50%");
+        tl2.fromTo(tickMarkPath, { strokeDashoffset: pathLength }, { strokeDashoffset: 0 }, "<50%");
     } else {
         tl2.to('.checkbox--fill', { top: '100%' });
         tl2.fromTo(tickMarkPath, { strokeDashoffset: 0 }, { strokeDashoffset: pathLength }, '<50%');
